@@ -1,6 +1,5 @@
 package LAB3.Formating.number3;
 
-import java.text.Format;
 import java.util.Formatter;
 
 public class Report {
@@ -8,7 +7,8 @@ public class Report {
         for (Employee em : mas) {
             Formatter formatter = new Formatter();
             Double sl = em.salary;
-            formatter.format("Salary: |%20.3f|", sl);
+            String name = em.fullname;
+            formatter.format("Salary: |%20.2f| -> %s", sl, name);
             System.out.println(formatter);
         }
     }
