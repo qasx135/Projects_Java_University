@@ -1,15 +1,12 @@
 package LAB4_1.number1;
 
-public class Rectangle extends Shape{
-
+public class Square extends Shape{
     private Double a;
-    private Double b;
-    public Rectangle(String type, Double a, Double b) {
+    public Square(String type, Double a) {
         super(type);
         this.a = a;
-        this.b = b;
-        this.area = a * b;
-        this.perimeter = 2 * (a + b);
+        this.perimeter = 4 * a;
+        this.area = a * a;
     }
 
     @Override
@@ -29,6 +26,6 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "From child class Rectangle !";
+        return "From child class Square !";
     }
 }

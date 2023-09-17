@@ -2,22 +2,21 @@ package LAB4_1.number1;
 
 public class Circle extends Shape{
 
-    private double radius;
-    private final double area;
+    private Double radius;
 
-    public Circle(String type, double radius) {
+    public Circle(String type, Double radius) {
         super(type);
         this.radius = radius;
         this.area = 3.14 * radius * radius;
     }
 
     @Override
-    public double getArea() {
+    public Double getArea() {
         return area;
     }
 
     @Override
-    public double getPerimeter() {
+    public Double getPerimeter() {
         return 0.0;
     }
 

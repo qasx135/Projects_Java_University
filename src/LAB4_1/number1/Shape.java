@@ -1,19 +1,19 @@
 package LAB4_1.number1;
 
 public class Shape {
-    private double area;
-    private double perimeter;
-    private String type;
+    protected Double area = 0.0;
+    protected Double perimeter = 0.0;
+    protected String type;
 
     public Shape(String type) {
         this.type = type;
     }
-    public double getArea() {
-        return 0.0;
+    public Double getArea() {
+        return area;
     }
 
-    public double getPerimeter() {
-        return 0.0;
+    public Double getPerimeter() {
+        return perimeter;
     }
 
     public String getType() {
