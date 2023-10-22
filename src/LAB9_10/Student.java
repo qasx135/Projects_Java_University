@@ -4,6 +4,7 @@ public class Student implements Comparable {
     private int number;
     private String name;
     private double gpa;
+    private String dateOfBirth;
 
     public Student(int number, String name, double gpa) {
         this.number = number;
